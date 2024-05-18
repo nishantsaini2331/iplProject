@@ -864,12 +864,12 @@ function MatchDetail() {
             ) : ( */}
                 <InPageNavigaion
                     teams={[
-                        fixedData.matchInfo.team1.shortName,
-                        fixedData.matchInfo.team2.shortName,
+                        data.matchInfo.team1.shortName,
+                        data.matchInfo.team2.shortName,
                     ]}>
                         
                         {
-                            fixedData.matchInfo.team1.playerDetails.map((data,i) => (
+                            data.matchInfo.team1.playerDetails.map((data,i) => (
                                 <div key={i} className="text-xl m-5">
                                     <h1 >{data.fullName}</h1>
                                     <h3 className="opacity-50"> {data.role}</h3>
@@ -879,7 +879,7 @@ function MatchDetail() {
 
 
                         {
-                            fixedData.matchInfo.team2.playerDetails.map((data,i) => (
+                            data.matchInfo.team2.playerDetails.map((data,i) => (
                                 <div key={i} className="text-xl m-5">
                                     <h1 >{data.fullName}</h1>
                                     <h3 className="opacity-50"> {data.role}</h3>
