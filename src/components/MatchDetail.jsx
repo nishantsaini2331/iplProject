@@ -859,9 +859,9 @@ function MatchDetail() {
     return (
         <>
             <div className="text-2xl text-center m-5">MatchDetail</div>
-            {/* {data.length <= 0 ? (
+            {data.length <= 0 ? (
                 <h1>Loding....</h1>
-            ) : ( */}
+            ) : (
                 <InPageNavigaion
                     teams={[
                         data.matchInfo.team1.shortName,
@@ -888,7 +888,7 @@ function MatchDetail() {
                         }
 
                 </InPageNavigaion>
-            {/* )} */}
+              )}  
         </>
     );
 }
