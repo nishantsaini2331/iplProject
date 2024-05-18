@@ -853,7 +853,7 @@ function MatchDetail() {
     }
 
     useEffect(() => {
-        // FetchMatchDetail();
+        FetchMatchDetail();
     }, []);
 
     return (
